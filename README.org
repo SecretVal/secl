@@ -1,0 +1,2 @@
+* Secl
+Secl (short for "secret-c-lib") is just a little custom c lib that I made to use i almost any project 
