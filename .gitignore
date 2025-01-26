@@ -1,1 +1,3 @@
 .direnv/
+.ccs-cache/
+result/

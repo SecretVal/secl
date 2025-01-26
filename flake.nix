@@ -17,7 +17,7 @@
         packages.default = pkgs.stdenv.mkDerivation {
           pname = name;
           inherit version;
-          src = ./.;
+          src = ./src/.;
 
           installPhase = ''
             mkdir -p $out/include
