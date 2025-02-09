@@ -13,7 +13,11 @@ char* secl_read_file(FILE *f)
     fseek(f, 0, SEEK_SET);
     buf = malloc(len);
     if (buf) {
-      fread(buf, 1, len, f);
+      int res = fread(buf, 1, len, f);
+      if (res == 0) {
+	fprintf(stderr, "Error: Could not fread file\n");
+	exit(1);
+      }
     }
   }
   return buf;
