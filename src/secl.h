@@ -16,6 +16,7 @@ char* secl_read_file(FILE *f)
       fread(buf, 1, len, f);
     }
   }
+  return buf;
 }
 
 #endif
